@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pattern {
+    width: 100%;
+    position: relative;
+}
+
+.title-container {
+    position: absolute;
+    top: 30px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold;
+    font-family: Montserrat-Light;
+    src: url("../icons/Montserrat-SemiBold.ttf");
+    src: url("../icons/Montserrat-Light.ttf");
+    src: url("../icons/Montserrat-Medium.ttf");
+    /* src: url("../icons/Montserrat-SemiBold.ttf");
+    src: url("../icons/Montserrat-SemiBold.ttf");
+    src: url("../icons/Montserrat-SemiBold.ttf");
+    src: url("../icons/Montserrat-SemiBold.ttf");
+    src: url("../icons/Montserrat-SemiBold.ttf");
+    src: url("../icons/Montserrat-SemiBold.ttf"); */
+}
+
+.title {
+    position: absolute;
+    margin-left: 100px;
+    color: #5e56e7;
+    font-family: Montserrat-SemiBold;
+    font-style: regular;
+    font-size: 48px;
+}
+
+.desc {
+    position: absolute;
+    margin-left: 100px;
+    top: 80px;
+    font-family: Montserrat-Light;
+    font-style: regular;
+    font-size: 16px;
+    color: #333333;
+}
+
+.categories-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f7ff;
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.genre-card {}
