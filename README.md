@@ -1,1 +1,1 @@
-# Instructions to setus Project
+# Instructions to setup Project
