@@ -1,8 +1,20 @@
 import React, { useState } from "react";
 import pattern from "../icons/Pattern.svg";
+import fiction from "../icons/Fiction.svg";
+import politics from "../icons/Politics.svg";
+import next from "../icons/Next.svg";
+import philosophy from "../icons/Philosophy.svg";
+import drama from "../icons/Drama.svg";
+import historyGenre from "../icons/History.svg";
+import humour from "../icons/Humour.svg";
+import adventure from "../icons/Adventure.svg";
 import "./Category.css";
 
 const Category = (props) => {
+  const sentToBook = (params) => {
+    window.location.href = "book";
+  };
+
   return (
     <div className="container">
       <div className="pattern-container">
@@ -16,13 +28,90 @@ const Category = (props) => {
         </p>
       </div>
       <div className="categories-container">
-        <div className="genre-card">FICTION</div>
-        <div className="genre-card">DRAMA</div>
-        <div className="genre-card">PHILOSOPY</div>
-        <div className="genre-card">HISTORY</div>
-        <div className="genre-card">HUMOUR</div>
-        <div className="genre-card">ADVENTURE</div>
-        <div className="genre-card">POLITICS</div>
+        <div
+          className="genre-card"
+          onClick={() => {
+            sentToBook();
+          }}
+        >
+          <div className="left">
+            <img src={fiction} alt="pp" />
+            FICTION
+          </div>
+          <img src={next} alt="pp" />
+        </div>
+        <div
+          className="genre-card"
+          onClick={() => {
+            sentToBook();
+          }}
+        >
+          <div className="left">
+            <img src={philosophy} alt="pp" />
+            DRAMA
+          </div>
+          <img src={next} alt="pp" />
+        </div>
+        <div
+          className="genre-card"
+          onClick={() => {
+            sentToBook();
+          }}
+        >
+          <div className="left">
+            <img src={drama} alt="pp" />
+            PHILOSOPY
+          </div>
+          <img src={next} alt="pp" />
+        </div>
+        <div
+          className="genre-card"
+          onClick={() => {
+            sentToBook();
+          }}
+        >
+          <div className="left">
+            <img src={historyGenre} alt="pp" />
+            HISTORY
+          </div>
+          <img src={next} alt="pp" />
+        </div>
+        <div
+          className="genre-card"
+          onClick={() => {
+            sentToBook();
+          }}
+        >
+          <div className="left">
+            <img src={humour} alt="pp" />
+            HUMOUR
+          </div>
+          <img src={next} alt="pp" />
+        </div>
+        <div
+          className="genre-card"
+          onClick={() => {
+            sentToBook();
+          }}
+        >
+          <div className="left">
+            <img src={adventure} alt="pp" />
+            ADVENTURE
+          </div>
+          <img src={next} alt="pp" />
+        </div>
+        <div
+          className="genre-card"
+          onClick={() => {
+            sentToBook();
+          }}
+        >
+          <div className="left">
+            <img src={politics} alt="pp" />
+            POLITICS
+          </div>
+          <img src={next} alt="pp" />
+        </div>
       </div>
     </div>
   );
