@@ -12,16 +12,18 @@
     position: absolute;
     top: 30px;
     margin: auto;
-    width: 100%;
+    width: 90%;
     text-align: center;
 }
 
 @font-face {
     font-family: Montserrat-SemiBold;
     font-family: Montserrat-Light;
-    src: url("../icons/Montserrat-SemiBold.ttf");
+    font-family: Montserrat;
+    /* src: url("../icons/Montserrat-SemiBold.ttf"); */
     src: url("../icons/Montserrat-Light.ttf");
     src: url("../icons/Montserrat-Medium.ttf");
+    src: url("../icons/Montserrat-SemiBold.ttf");
     /* src: url("../icons/Montserrat-SemiBold.ttf");
     src: url("../icons/Montserrat-SemiBold.ttf");
     src: url("../icons/Montserrat-SemiBold.ttf");
@@ -32,16 +34,16 @@
 
 .title {
     position: absolute;
-    margin-left: 100px;
+    margin-left: 150px;
     color: #5e56e7;
-    font-family: Montserrat-SemiBold;
+    font-family: Montserrat;
     font-style: regular;
     font-size: 48px;
 }
 
 .desc {
     position: absolute;
-    margin-left: 100px;
+    margin-left: 150px;
     top: 80px;
     font-family: Montserrat-Light;
     font-style: regular;
@@ -50,20 +52,11 @@
 }
 
 .categories-container {
-    /* display: flex;
-    flex-direction: column; */
+    background-color: #f8f7ff;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    /* justify-content: space-between; */
-    background-color: #f8f7ff;
-    width: 100%;
-    /* position: relative; */
-    align-items: center;
-    /* display: flex;
-    flex-flow: row wrap;
-    flex-direction: row; */
-    /* height: 500px; */
+    justify-content: flex-start;
+    padding-bottom: 100px;
 }
 
 .container {
@@ -73,26 +66,20 @@
 
 .genre-card {
     display: flex;
-    /* flex-direction: column; */
-    /* position: relative; */
-    /* display: flex;
-    flex-flow: row wrap;
-    flex-direction: row; */
     height: 50px;
     border-radius: 4px;
     padding-left: 10px;
     padding-right: 10px;
     box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
     background-color: white;
-    /* margin-top: 10px; */
     text-align: center;
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
     font-weight: 480;
-    width: 350px;
+    flex: 0 0 350px;
     margin-left: 150px;
-    margin-top: 12px;
+    margin-top: 20px;
     cursor: pointer;
 }
 

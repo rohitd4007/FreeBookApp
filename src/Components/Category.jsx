@@ -12,7 +12,8 @@ import "./Category.css";
 
 const Category = (props) => {
   const sentToBook = (params) => {
-    window.location.href = "book";
+    //console.log(params);
+    window.location.href = `book/${params}`;
   };
 
   return (
@@ -27,90 +28,92 @@ const Category = (props) => {
           database of books, annotate, and review
         </p>
       </div>
-      <div className="categories-container">
-        <div
-          className="genre-card"
-          onClick={() => {
-            sentToBook();
-          }}
-        >
-          <div className="left">
-            <img src={fiction} alt="pp" />
-            FICTION
+      <div className="genre">
+        <div className="categories-container">
+          <div
+            className="genre-card"
+            onClick={() => {
+              sentToBook("fiction");
+            }}
+          >
+            <div className="left">
+              <img src={fiction} alt="pp" />
+              FICTION
+            </div>
+            <img src={next} alt="pp" />
           </div>
-          <img src={next} alt="pp" />
-        </div>
-        <div
-          className="genre-card"
-          onClick={() => {
-            sentToBook();
-          }}
-        >
-          <div className="left">
-            <img src={philosophy} alt="pp" />
-            DRAMA
+          <div
+            className="genre-card"
+            onClick={() => {
+              sentToBook("philosophy");
+            }}
+          >
+            <div className="left">
+              <img src={philosophy} alt="pp" />
+              DRAMA
+            </div>
+            <img src={next} alt="pp" />
           </div>
-          <img src={next} alt="pp" />
-        </div>
-        <div
-          className="genre-card"
-          onClick={() => {
-            sentToBook();
-          }}
-        >
-          <div className="left">
-            <img src={drama} alt="pp" />
-            PHILOSOPY
+          <div
+            className="genre-card"
+            onClick={() => {
+              sentToBook("drama");
+            }}
+          >
+            <div className="left">
+              <img src={drama} alt="pp" />
+              PHILOSOPY
+            </div>
+            <img src={next} alt="pp" />
           </div>
-          <img src={next} alt="pp" />
-        </div>
-        <div
-          className="genre-card"
-          onClick={() => {
-            sentToBook();
-          }}
-        >
-          <div className="left">
-            <img src={historyGenre} alt="pp" />
-            HISTORY
+          <div
+            className="genre-card"
+            onClick={() => {
+              sentToBook("historyGenre");
+            }}
+          >
+            <div className="left">
+              <img src={historyGenre} alt="pp" />
+              HISTORY
+            </div>
+            <img src={next} alt="pp" />
           </div>
-          <img src={next} alt="pp" />
-        </div>
-        <div
-          className="genre-card"
-          onClick={() => {
-            sentToBook();
-          }}
-        >
-          <div className="left">
-            <img src={humour} alt="pp" />
-            HUMOUR
+          <div
+            className="genre-card"
+            onClick={() => {
+              sentToBook("humour");
+            }}
+          >
+            <div className="left">
+              <img src={humour} alt="pp" />
+              HUMOUR
+            </div>
+            <img src={next} alt="pp" />
           </div>
-          <img src={next} alt="pp" />
-        </div>
-        <div
-          className="genre-card"
-          onClick={() => {
-            sentToBook();
-          }}
-        >
-          <div className="left">
-            <img src={adventure} alt="pp" />
-            ADVENTURE
+          <div
+            className="genre-card"
+            onClick={() => {
+              sentToBook("adventure");
+            }}
+          >
+            <div className="left">
+              <img src={adventure} alt="pp" />
+              ADVENTURE
+            </div>
+            <img src={next} alt="pp" />
           </div>
-          <img src={next} alt="pp" />
-        </div>
-        <div
-          className="genre-card"
-          onClick={() => {
-            sentToBook();
-          }}
-        >
-          <div className="left">
-            <img src={politics} alt="pp" />
-            POLITICS
+          <div
+            className="genre-card"
+            onClick={() => {
+              sentToBook("politics");
+            }}
+          >
+            <div className="left">
+              <img src={politics} alt="pp" />
+              POLITICS
+            </div>
+            <img src={next} alt="pp" />
           </div>
-          <img src={next} alt="pp" />
         </div>
       </div>
     </div>
