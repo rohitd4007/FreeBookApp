@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/FreeBookApp/static/css/main.48b08bcd.chunk.css",
+    "main.js": "/FreeBookApp/static/js/main.0958b8f8.chunk.js",
+    "main.js.map": "/FreeBookApp/static/js/main.0958b8f8.chunk.js.map",
+    "runtime-main.js": "/FreeBookApp/static/js/runtime-main.e5fdeac9.js",
+    "runtime-main.js.map": "/FreeBookApp/static/js/runtime-main.e5fdeac9.js.map",
+    "static/js/2.6290478d.chunk.js": "/FreeBookApp/static/js/2.6290478d.chunk.js",
+    "static/js/2.6290478d.chunk.js.map": "/FreeBookApp/static/js/2.6290478d.chunk.js.map",
+    "static/js/3.81b98d18.chunk.js": "/FreeBookApp/static/js/3.81b98d18.chunk.js",
+    "static/js/3.81b98d18.chunk.js.map": "/FreeBookApp/static/js/3.81b98d18.chunk.js.map",
+    "index.html": "/FreeBookApp/index.html",
+    "static/css/main.48b08bcd.chunk.css.map": "/FreeBookApp/static/css/main.48b08bcd.chunk.css.map",
+    "static/js/2.6290478d.chunk.js.LICENSE.txt": "/FreeBookApp/static/js/2.6290478d.chunk.js.LICENSE.txt",
+    "static/media/Adventure.74038d3e.svg": "/FreeBookApp/static/media/Adventure.74038d3e.svg",
+    "static/media/Back.98344a95.svg": "/FreeBookApp/static/media/Back.98344a95.svg",
+    "static/media/Drama.0e522682.svg": "/FreeBookApp/static/media/Drama.0e522682.svg",
+    "static/media/Fiction.c794b5b6.svg": "/FreeBookApp/static/media/Fiction.c794b5b6.svg",
+    "static/media/History.7ab22bf1.svg": "/FreeBookApp/static/media/History.7ab22bf1.svg",
+    "static/media/Humour.3f583231.svg": "/FreeBookApp/static/media/Humour.3f583231.svg",
+    "static/media/Category.css": "/FreeBookApp/static/media/Montserrat-SemiBold.fa8441f3.ttf",
+    "static/media/Next.b3e690a6.svg": "/FreeBookApp/static/media/Next.b3e690a6.svg",
+    "static/media/Pattern.c76b92de.svg": "/FreeBookApp/static/media/Pattern.c76b92de.svg",
+    "static/media/Philosophy.4ec2f970.svg": "/FreeBookApp/static/media/Philosophy.4ec2f970.svg",
+    "static/media/Politics.d65dec50.svg": "/FreeBookApp/static/media/Politics.d65dec50.svg",
+    "static/media/Search.css": "/FreeBookApp/static/media/Search.b6332096.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e5fdeac9.js",
+    "static/js/2.6290478d.chunk.js",
+    "static/css/main.48b08bcd.chunk.css",
+    "static/js/main.0958b8f8.chunk.js"
+  ]
+}
