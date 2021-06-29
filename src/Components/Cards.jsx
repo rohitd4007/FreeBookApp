@@ -3,6 +3,9 @@ import { useEffect, useState } from "react";
 import "./Cards.css";
 const Cards = (props) => {
   const [image, setImage] = useState([]);
+
+  const showpage = (url) => {};
+
   useEffect(() => {
     axios
       .get("http://gutendex.com/books/?mime_type=text%2F", {})
@@ -17,7 +20,14 @@ const Cards = (props) => {
   return (
     <div className="book-cards">
       {image.map((da, index) => (
-        <div key={index} className="book-cover">
+        <div
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href = da.formats["text/html; charset=utf-8"];
+          }}
+          key={index}
+          className="book-cover"
+        >
           <img
             className="book-image"
             // key={index}
@@ -26,6 +36,9 @@ const Cards = (props) => {
           />
           <div className="book-title">{da.title}</div>
           <div className="book-author">{da.authors[0].name}</div>
+          {/* <div className="book-author">
+            {da.formats["text/html; charset=utf-8"]}
+          </div> */}
         </div>
       ))}
     </div>

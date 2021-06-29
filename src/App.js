@@ -8,7 +8,6 @@ import Services from "./Components/Services";
 function App() {
   return (
     <div className="App">
-      <Category />
       <Router>
         <Route exact path="/" render={() => <Redirect to="/category" />} />
 

@@ -12,7 +12,6 @@ import "./Category.css";
 
 const Category = (props) => {
   const sentToBook = (params) => {
-    //console.log(params);
     window.location.href = `book/${params}`;
   };
 
@@ -24,8 +23,8 @@ const Category = (props) => {
       <div className="title-container">
         <h2 className="title">Guttenberg Project</h2>
         <p className="desc">
-          A social cataloging website that allows you to freely serach its
-          database of books, annotate, and review
+          A social cataloging website that allows you to freely search its
+          database of books, annotations, and reviews.
         </p>
       </div>
       <div className="genre">
@@ -69,7 +68,7 @@ const Category = (props) => {
           <div
             className="genre-card"
             onClick={() => {
-              sentToBook("historyGenre");
+              sentToBook("history");
             }}
           >
             <div className="left">
