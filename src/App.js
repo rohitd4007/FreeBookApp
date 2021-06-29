@@ -8,9 +8,8 @@ import Services from "./Components/Services";
 function App() {
   return (
     <div className="App">
-      <Services />
       <Router>
-        {/* <Route exact path="/" render={() => <Redirect to="/category" />} /> */}
+        <Route exact path="/" render={() => <Redirect to="/category" />} />
 
         <Route exact path="/book" component={Book} />
         <Route path="/category" component={Category} />

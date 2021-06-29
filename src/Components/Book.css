@@ -22,3 +22,10 @@
 .genre-title {
     margin-left: 5px;
 }
+
+.book-details {
+    width: 100%;
+    margin: auto;
+    background-color: #f8f7ff;
+    margin-top: 20px;
+}

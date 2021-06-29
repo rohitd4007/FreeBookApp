@@ -1,45 +1,35 @@
-import React, { useState } from "react";
-import pattern from "../icons/Pattern.svg";
-// import "./Cards.css";
-
+import axios from "axios";
+import { useEffect, useState } from "react";
+import "./Cards.css";
 const Cards = (props) => {
-  const Team = ["Team 1", "Team 2", "Team 3", "Team 4"];
-  const [response, setResponse] = useState([
-    ["Team 1", "Team 2", "Team 3", "Team 4"],
-  ]);
-
-  const [showResults, setShowResults] = React.useState(false);
-  const onClick = () => {
-    setShowResults(true);
-  };
+  const [image, setImage] = useState([]);
+  useEffect(() => {
+    axios
+      .get("http://gutendex.com/books/?mime_type=text%2F", {})
+      .then((res) => {
+        setImage(res.data.results);
+      })
+      .catch((err) => {
+        console.log(err, "💥");
+      });
+  });
+  console.log(image);
   return (
-    <div>
-      <div className="team-container">
-        {response.map((data, index) => (
-          <div key={index}>{data}</div>
-        ))}
-      </div>
-      <button onClick={onClick}>show</button>
-      {showResults ? (
-        <div id="results" className="search-results">
-          <input value type="text" placeholder="enter new team name" />
-          <button
-            onClick={() => {
-              setResponse([...response, "new"]);
-            }}
-          >
-            Add
-          </button>
+    <div className="book-cards">
+      {image.map((da, index) => (
+        <div key={index} className="book-cover">
+          <img
+            className="book-image"
+            // key={index}
+            src={da.formats["image/jpeg"]}
+            alt=""
+          />
+          <div className="book-title">{da.title}</div>
+          <div className="book-author">{da.authors[0].name}</div>
         </div>
-      ) : (
-        ""
-      )}
+      ))}
     </div>
   );
 };
-
-// const Results = (team) => (
-
-// );
 
 export default Cards;

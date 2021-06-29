@@ -1,5 +1,6 @@
 import backIcon from "../icons/Back.svg";
 import "./Book.css";
+import Cards from "./Cards";
 import Search from "./Search";
 
 const Book = (props) => {
@@ -11,6 +12,9 @@ const Book = (props) => {
       </div>
       <div className="serach-bar">
         <Search></Search>
+      </div>
+      <div className="book-details">
+        <Cards></Cards>
       </div>
     </div>
   );
