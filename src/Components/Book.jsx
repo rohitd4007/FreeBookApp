@@ -18,10 +18,10 @@ const Book = (props) => {
         <span className="genre-title">{props.genre}</span>
       </div>
       <div className="serach-bar">
-        <Search></Search>
+        <Search />
       </div>
       <div className="book-details">
-        <Cards></Cards>
+        <Cards topic={props.genre} />
       </div>
     </div>
   );

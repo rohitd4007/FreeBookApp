@@ -49,7 +49,7 @@ const Category = (props) => {
           >
             <div className="left">
               <img src={philosophy} alt="pp" />
-              DRAMA
+              PHILOSOPY
             </div>
             <img src={next} alt="pp" />
           </div>
@@ -61,7 +61,7 @@ const Category = (props) => {
           >
             <div className="left">
               <img src={drama} alt="pp" />
-              PHILOSOPY
+              DRAMA
             </div>
             <img src={next} alt="pp" />
           </div>

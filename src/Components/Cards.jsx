@@ -1,22 +1,36 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./Cards.css";
+const PAGE_NUMBER = 1;
 const Cards = (props) => {
   const [image, setImage] = useState([]);
-
-  const showpage = (url) => {};
-
+  const [page, setPage] = useState(PAGE_NUMBER);
   useEffect(() => {
     axios
-      .get("http://gutendex.com/books/?mime_type=text%2F", {})
+      .get(
+        `http://gutendex.com/books/?mime_type=text%2F&page=${page}&topic=${props.topic}&search=dickens`,
+        {}
+      )
       .then((res) => {
-        setImage(res.data.results);
+        setImage([...image, ...res.data.results]);
       })
       .catch((err) => {
         console.log(err, "💥");
       });
-  });
-  console.log(image);
+  }, [page]);
+
+  const scrollToEnd = () => {
+    setPage(page + 1);
+  };
+  window.onscroll = () => {
+    if (
+      window.innerHeight + document.documentElement.scrollTop ===
+      document.documentElement.offsetHeight
+    ) {
+      scrollToEnd();
+    }
+  };
+
   return (
     <div className="book-cards">
       {image.map((da, index) => (
@@ -28,17 +42,13 @@ const Cards = (props) => {
           key={index}
           className="book-cover"
         >
-          <img
-            className="book-image"
-            // key={index}
-            src={da.formats["image/jpeg"]}
-            alt=""
-          />
+          <img className="book-image" src={da.formats["image/jpeg"]} alt="" />
           <div className="book-title">{da.title}</div>
-          <div className="book-author">{da.authors[0].name}</div>
-          {/* <div className="book-author">
-            {da.formats["text/html; charset=utf-8"]}
-          </div> */}
+          {da.authors[0] ? (
+            <div className="book-author">{da.authors[0].name}</div>
+          ) : (
+            ""
+          )}
         </div>
       ))}
     </div>
