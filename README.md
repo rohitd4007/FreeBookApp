@@ -1,3 +1,5 @@
 # Instructions to setup Project
 
-### use npm install create-react-app
+###  clone repository
+###  run "npm install" to download required dependency
+###  run "npm start" to start server. project will open on port 8000
